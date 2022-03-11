@@ -76,7 +76,7 @@ The following steps require that your local computer is connected to campus netw
             [I 2022-03-11 16:48:22.024 ServerApp] http://gpu-6-13:8888/
             [I 2022-03-11 16:48:22.024 ServerApp]  or http://127.0.0.1:8888/
             [I 2022-03-11 16:48:22.024 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-    * Look at the bottom of the error file, you will see 2 URLs ```http://gpu-6-13:8888/``` and ```http://127.0.0.1:8888/```. You can ignore the 2nd URL (and you may NOT see the 2nd URL). In the 1st URL, take note of the <node_name> (e.g. **gpu-6-13** in this example) and the <PORT> (e.g. **8888** in this example) 
+    * Look at the bottom of the error file, you will see 2 URLs ```http://gpu-6-13:8888/``` and ```http://127.0.0.1:8888/```. You can ignore the 2nd URL (and you may NOT see the 2nd URL). In the 1st URL, take note of the <node_name> (e.g. **gpu-6-13** in this example) and the \<PORT\> (e.g. **8888** in this example) 
     * Now we need to establish a SSH tunnel to direct traffic from our local computer (your laptop or PC) to the Notebook Sever. This is done by running the following command in a terminal app or command prompt of **YOUR LOCAL COMPUTER**:
 
             ssh -N -L 8888:<node_name>:<PORT> <your_unet_account>@hpcc.brandeis.edu
